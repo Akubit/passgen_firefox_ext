@@ -9,7 +9,7 @@ This is a simple application to generate random password I created because of my
 
 ## Installation
 
-- Download the [xpi file here](https://github.com/Akubit/passgen_firefox_ext)
+- Download the [xpi file here](https://github.com/Akubit/passgen_firefox_ext/releases/tag/v1.0.1)
 - Double-click to install to Firefox
 
 
