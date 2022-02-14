@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/index.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Generate a <span>random password</span></h1>
+                <h2>Randomize safe passwords. Choose the one you like the best</h2>
+            </div>
+        </header>
+        <div style="position: relative;">
+            <section id="passwords">
+                <div id="pass1"><span>Password 1</span></div>
+                <div id="pass2"><span>Password 2</span></div>
+                <div id="pass3"><span>Password 3</span></div>
+                <div id="pass4"><span>Password 4</span></div>
+            </section>
+            <section id="copy-passwords">
+                <div id="copy1">
+                    <button>
+                   </button>
+                </div>
+                <div id="copy2">
+                    <button>
+                    </button>
+                </div>
+                <div id="copy3">
+                    <button>
+                    </button>
+                </div>
+                <div id="copy4">
+                    <button>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <p id="current"></p>
+        <section id="form">
+            <button id="generate">Generate passwords</button>
+            <div class="form-range">
+                <label for="range">Number of characters : <span id="amount">12</span></label>
+                <input type="range" min="8" max="20" value="12" class="slider" name="range" id="range">
+            </div>
+            <div class="form-checkboxes">
+                <div class="form-checkbox">
+                    <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase" checked>Uppercase (A-Z)</label>
+                </div>
+                <div class="form-checkbox">
+                    <label for="lowercase"><input type="checkbox" name="lowercase" id="lowercase" checked>Lowercase (a-z)</label>
+                </div>
+                <div class="form-checkbox">
+                    <label for="numbers"><input type="checkbox" name="numbers" id="numbers" checked>Numbers (0-9)</label>
+                </div>
+                <div class="form-checkbox">
+                    <label for="special"><input type="checkbox" name="special" id="special" checked>Specials (!@#)</label>
+                </div>
+            </div>
+        </section>
+        <script src="assets/index.js"></script>
+    </body>
+</html>
